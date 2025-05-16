@@ -2,7 +2,7 @@
 
 This repository is the official implementation of [OpenPros: A Large-Scale Dataset for Limited View Prostate Ultrasound Computed Tomography](https://arxiv.org/abs/2030.12345). 
 
-![teaser_4](https://github.com/user-attachments/assets/f7600fed-4415-4bba-ab04-bf87a4484b09)
+![teaser_4](https://github.com/user-attachments/assets/bbc5153b-9c96-4b77-9eea-79f5221eecb1)
 
 ## Requirements
 
