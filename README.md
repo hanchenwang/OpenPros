@@ -33,12 +33,13 @@ python eval.py --model-file mymodel.pth --benchmark imagenet
 
 You can download pretrained models here:
 
-- [My awesome model](https://drive.google.com/mymodel.pth) trained on ImageNet using parameters x,y,z. 
+InversionNet checkpoint can be downloaded at: [https://drive.google.com/file/d/1TVrrzmVzUQvUyDTZ4il-EGH5EG60yFBL/view?usp=share_link](https://drive.google.com/file/d/1TVrrzmVzUQvUyDTZ4il-EGH5EG60yFBL/view?usp=share_link)
+ViT-Inversion checkpoint can be downloaded at: [https://drive.google.com/file/d/1TVrrzmVzUQvUyDTZ4il-EGH5EG60yFBL/view?usp=share_link](https://drive.google.com/file/d/1u7nLsy-a7lsiG3gcK67HMeH_R4aUL3-Z/view?usp=share_link)
 
 ## Results
 
 Our model achieves the following performance:
-
+--------|-------|-------|-------|------
 Method	|MAE ↓	|RMSE ↓	|SSIM ↑	|PCC ↑
 --------|-------|-------|-------|------
 InversionNet	|0.0089	|0.0433	|0.9845	|0.9798
