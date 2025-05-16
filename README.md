@@ -1,6 +1,6 @@
 >📋  A template README.md for code accompanying a Machine Learning paper
 
-# My Paper Title
+# OpenPros: A Large-Scale Dataset for Limited View Prostate Ultrasound Computed Tomography
 
 This repository is the official implementation of [OpenPros: A Large-Scale Dataset for Limited View Prostate Ultrasound Computed Tomography](https://arxiv.org/abs/2030.12345). 
 
