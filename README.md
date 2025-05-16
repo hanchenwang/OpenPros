@@ -40,9 +40,9 @@ ViT-Inversion checkpoint can be downloaded at: [https://drive.google.com/file/d/
 ## Results
 
 Our model achieves the following performance:
---------|-------|-------|-------|------
+-----------------------------------
 Method	|MAE ↓	|RMSE ↓	|SSIM ↑	|PCC ↑
---------|-------|-------|-------|------
+-----------------------------------
 InversionNet	|0.0089	|0.0433	|0.9845	|0.9798
 ViT-Inversion	|0.0123	|0.0566	|0.9774	|0.9728
 
