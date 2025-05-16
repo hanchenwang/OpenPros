@@ -1,5 +1,3 @@
->📋  A template README.md for code accompanying a Machine Learning paper
-
 # OpenPros: A Large-Scale Dataset for Limited View Prostate Ultrasound Computed Tomography
 
 This repository is the official implementation of [OpenPros: A Large-Scale Dataset for Limited View Prostate Ultrasound Computed Tomography](https://arxiv.org/abs/2030.12345). 
@@ -13,8 +11,6 @@ To install requirements:
 ```setup
 pip install -r requirements.txt
 ```
-
->📋  Describe how to set up the environment, e.g. pip/conda/docker commands, download datasets, etc...
 
 ## Training
 
@@ -38,8 +34,6 @@ python eval.py --model-file mymodel.pth --benchmark imagenet
 You can download pretrained models here:
 
 - [My awesome model](https://drive.google.com/mymodel.pth) trained on ImageNet using parameters x,y,z. 
-
->📋  Give a link to where/how the pretrained models can be downloaded and how they were trained (if applicable).  Alternatively you can have an additional column in your results table with a link to the models.
 
 ## Results
 
