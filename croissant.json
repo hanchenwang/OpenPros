@@ -1,0 +1,282 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "OpenPros: A Large-Scale Dataset for Limited View Prostate Ultrasound Computed Tomography",
+  "description": "OpenPros dataset for scientific machine learning, containing paired seismic data and speed of sound labels stored as .npy files in structured folders.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "url": "https://huggingface.co/datasets/ashynf/OpenPros",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "repo",
+      "name": "repo",
+      "description": "The Hugging Face dataset repository.",
+      "contentUrl": "https://huggingface.co/datasets/ashynf/OpenPros",
+      "encodingFormat": "git+https",
+      "sha256": "https://github.com/mlcommons/croissant/issues/80"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "set-3_01",
+      "name": "data-pairs-3_01",
+      "description": "Paired .npy files (input/output) in 3_01.",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/x-npy",
+      "includes": "speed_of_sound/3_01/*.npy"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "set-3_02",
+      "name": "data-pairs-3_02",
+      "description": "Paired .npy files (input/output) in 3_02.",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/x-npy",
+      "includes": "speed_of_sound/3_02/*.npy"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "set-3_03",
+      "name": "data-pairs-3_03",
+      "description": "Paired .npy files (input/output) in 3_03.",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/x-npy",
+      "includes": "speed_of_sound/3_03/*.npy"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "set-3_04",
+      "name": "data-pairs-3_04",
+      "description": "Paired .npy files (input/output) in 3_04.",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/x-npy",
+      "includes": "speed_of_sound/3_04/*.npy"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "records-3_01",
+      "name": "records-3_01",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "3_01/input",
+          "name": "input",
+          "description": "Input data from *_data.npy files.",
+          "dataType": "cr:Float32",
+          "source": {
+            "fileSet": {
+              "@id": "set-3_01"
+            },
+            "extract": {
+              "fileProperty": "filename"
+            },
+            "transform": {
+              "regex": "speed_of_sound/3_01/(.*)_data(.*)$"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "3_01/output",
+          "name": "output",
+          "description": "Output label from *_sos.npy files.",
+          "dataType": "cr:Float32",
+          "source": {
+            "fileSet": {
+              "@id": "set-3_01"
+            },
+            "extract": {
+              "fileProperty": "filename"
+            },
+            "transform": {
+              "regex": "speed_of_sound/3_01/(.*)_sos(.*)$"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "records-3_02",
+      "name": "records-3_02",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "3_02/input",
+          "name": "input",
+          "description": "Input data from *_data.npy files.",
+          "dataType": "cr:Float32",
+          "source": {
+            "fileSet": {
+              "@id": "set-3_02"
+            },
+            "extract": {
+              "fileProperty": "filename"
+            },
+            "transform": {
+              "regex": "speed_of_sound/3_02/(.*)_data(.*)$"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "3_02/output",
+          "name": "output",
+          "description": "Output label from *_sos.npy files.",
+          "dataType": "cr:Float32",
+          "source": {
+            "fileSet": {
+              "@id": "set-3_02"
+            },
+            "extract": {
+              "fileProperty": "filename"
+            },
+            "transform": {
+              "regex": "speed_of_sound/3_02/(.*)_sos(.*)$"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "records-3_03",
+      "name": "records-3_03",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "3_03/input",
+          "name": "input",
+          "description": "Input data from *_data.npy files.",
+          "dataType": "cr:Float32",
+          "source": {
+            "fileSet": {
+              "@id": "set-3_03"
+            },
+            "extract": {
+              "fileProperty": "filename"
+            },
+            "transform": {
+              "regex": "speed_of_sound/3_03/(.*)_data(.*)$"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "3_03/output",
+          "name": "output",
+          "description": "Output label from *_sos.npy files.",
+          "dataType": "cr:Float32",
+          "source": {
+            "fileSet": {
+              "@id": "set-3_03"
+            },
+            "extract": {
+              "fileProperty": "filename"
+            },
+            "transform": {
+              "regex": "speed_of_sound/3_03/(.*)_sos(.*)$"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "records-3_04",
+      "name": "records-3_04",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "3_04/input",
+          "name": "input",
+          "description": "Input data from *_data.npy files.",
+          "dataType": "cr:Float32",
+          "source": {
+            "fileSet": {
+              "@id": "set-3_04"
+            },
+            "extract": {
+              "fileProperty": "filename"
+            },
+            "transform": {
+              "regex": "speed_of_sound/3_04/(.*)_data(.*)$"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "3_04/output",
+          "name": "output",
+          "description": "Output label from *_sos.npy files.",
+          "dataType": "cr:Float32",
+          "source": {
+            "fileSet": {
+              "@id": "set-3_04"
+            },
+            "extract": {
+              "fileProperty": "filename"
+            },
+            "transform": {
+              "regex": "speed_of_sound/3_04/(.*)_sos(.*)$"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

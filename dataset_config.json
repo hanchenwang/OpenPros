@@ -1,0 +1,8 @@
+{
+    "prostate": {
+        "data_min": -2e-7, 
+        "data_max": 3e-7,
+        "label_min": 1300,
+        "label_max": 3600
+    }
+}
