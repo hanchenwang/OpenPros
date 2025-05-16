@@ -26,7 +26,8 @@ python -u train.py -n baseline -s debug2 -m FCN4_Deep -mc config/inv.yaml -g1v 1
 To evaluate my model on ImageNet, run:
 
 ```eval
-python eval.py --model-file mymodel.pth --benchmark imagenet
+python -u test.py -n baseline -s run2 -m FCN4_Deep -mc config/inv.yaml \
+  -b 128 -j 8 --k 1e9 -r model_240.pth -v prostate_test.txt --vis -vsu 240 -vb 1 -vsa 20
 ```
 
 ## Pre-trained Models
