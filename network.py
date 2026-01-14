@@ -5,6 +5,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from collections import OrderedDict
+import vit
 
 NORM_LAYERS = { 'bn': nn.BatchNorm2d, 'in': nn.InstanceNorm2d, 'ln': nn.LayerNorm }
 
@@ -203,6 +204,7 @@ class FCN4_Deep_P(nn.Module):
 model_dict = {
     'FCN4_Deep': FCN4_Deep,
     'FCN4_Deep_P': FCN4_Deep_P,
+    'ViT': vit.prostate_inverse,
 }
 
 if __name__ == '__main__':
