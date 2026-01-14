@@ -292,7 +292,7 @@ def parse_args():
     parser.add_argument('--lr', default=0.0004, type=float, help='initial learning rate')
     parser.add_argument('-lm', '--lr-milestones', nargs='+', default=[], type=int, help='decrease lr on milestones')
     parser.add_argument('--momentum', default=0.9, type=float, help='momentum')
-    parser.add_argument('--weight-decay', default=1e-4 , type=float, help='weight decay (default: 1e-4)')
+    parser.add_argument('--weight-decay', default=0.05 , type=float, help='weight decay (default: 1e-4)')
     parser.add_argument('--lr-gamma', default=0.1, type=float, help='decrease lr by a factor of lr-gamma')
     parser.add_argument('--lr-warmup-epochs', default=5, type=int, help='number of warmup epochs')   
     parser.add_argument('-eb', '--epoch-block', type=int, default=10, help='epochs in a saved block')
