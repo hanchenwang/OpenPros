@@ -53,7 +53,8 @@ python -u test.py -n baseline -s run2_vit -m ViT -mc config/inv.yaml \
 You can download pretrained models here:
 
 InversionNet checkpoint can be downloaded at: [https://drive.google.com/file/d/1sWcQbFxNOZ1HZkIJnwQ4DcyT3KZm7eax/view?usp=sharing](https://drive.google.com/file/d/1sWcQbFxNOZ1HZkIJnwQ4DcyT3KZm7eax/view?usp=sharing)
-ViT-Inversion checkpoint can be downloaded at: [https://drive.google.com/file/d/1TVrrzmVzUQvUyDTZ4il-EGH5EG60yFBL/view?usp=share_link](https://drive.google.com/file/d/1u7nLsy-a7lsiG3gcK67HMeH_R4aUL3-Z/view?usp=share_link)
+
+ViT-Inversion checkpoint can be downloaded at: [https://drive.google.com/file/d/1CXTzHkhipru8GpRJHiFkLBkZWK19JQt7/view?usp=sharing](https://drive.google.com/file/d/1CXTzHkhipru8GpRJHiFkLBkZWK19JQt7/view?usp=sharing)
 
 ## Results
 
