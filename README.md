@@ -69,9 +69,8 @@ Our model achieves the following performance:
 
 ## Contributing
 
-First and foremost, the reproducibility of \textsc{OpenPros} benchmarks is guaranteed by a number of public resources, listed below. Remarkably, we have a group (link available below) where any related discussion is welcome. Our team also promises to maintain the platform and support further developments based on the community feedback.
+First and foremost, the reproducibility of OpenPros benchmarks is guaranteed by a number of public resources, listed below. Our team also promises to maintain the platform and support further developments based on the community feedback.
 
 Website: [https://open-pros.github.io](https://open-pros.github.io)
-Google Group: [https://groups.google.com/g/openfwi](https://groups.google.com/g/openfwi)
 
 The codes are released on Github under OSS license and BSD-3 license. We also attach the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License to the data.
