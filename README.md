@@ -17,7 +17,7 @@ pip install -r requirements.txt
 To train the InversionNet in the paper, run this command:
 
 ```train
-srun -K1 python -u train.py -n baseline -s run2_inv -m FCN4_Deep -mc config/inv.yaml -g1v 1 -g2v 1 \
+python -u train.py -n baseline -s run2_inv -m FCN4_Deep -mc config/inv.yaml -g1v 1 -g2v 1 \
   --lr 1e-4 --lr-warmup-epochs 5 -b 128 -j 8  -nb 30 -eb 8 --k 1e5 \
   -t prostate_train_new.txt \
   --sync-bn --dist-url tcp://$MASTER:$MASTERPORT --world-size $SLURM_NTASKS 
@@ -25,7 +25,7 @@ srun -K1 python -u train.py -n baseline -s run2_inv -m FCN4_Deep -mc config/inv.
 
 To train the ViT-Inversion in the paper, run this command:
 ```train
-srun -K1 python -u train.py -n baseline -s run2 -m ViT -mc config/inv.yaml -g1v 1 -g2v 1 \
+python -u train.py -n baseline -s run2 -m ViT -mc config/inv.yaml -g1v 1 -g2v 1 \
   --lr 1e-4 --lr-warmup-epochs 5 -b 128 -j 8  -nb 30 -eb 8 --k 1e5 \
   -t prostate_train_new.txt \
   --sync-bn --dist-url tcp://$MASTER:$MASTERPORT --world-size $SLURM_NTASKS 
